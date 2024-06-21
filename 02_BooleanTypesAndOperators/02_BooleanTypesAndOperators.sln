@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BooleanTypesAndOperators", "02_BooleanTypesAndOperators\02_BooleanTypesAndOperators.csproj", "{14864E1C-2F0B-4ADE-99C2-A93DA3CD2034}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14864E1C-2F0B-4ADE-99C2-A93DA3CD2034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14864E1C-2F0B-4ADE-99C2-A93DA3CD2034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14864E1C-2F0B-4ADE-99C2-A93DA3CD2034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14864E1C-2F0B-4ADE-99C2-A93DA3CD2034}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB5D599B-A9A0-4799-A23B-03E277F81AC1}
+	EndGlobalSection
+EndGlobal
