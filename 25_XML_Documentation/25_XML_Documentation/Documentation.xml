@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<docs>
+	<members name="generator">
+		<Generator>
+			<summary>
+				The main Generator class.
+			</summary>
+			<remarks>
+				A class that generates unique IDs and random passwords.
+			</remarks>
+		</Generator>
+		<GenerateId>
+			<summary>
+				Generates a unique ID based on the <paramref name="fName"/>, <paramref name="lName"/>, and <paramref name="hireDate"/>.
+			</summary>
+			<param name="fName"></param>
+			<param name="lName"></param>
+			<param name="hireDate"></param>
+			<code>
+				var id = Generator.GenerateId("John", "Doe", DateTime.Now);
+				Console.WriteLine(id);
+			</code>
+			<returns>
+				A unique ID in the format of II-YY-MM-DD-SS string.
+				<list type="bullet">
+					<item>
+						<term>II</term>
+						<description>
+							Empolyees initials (first letter of <paramref name="fName"/>, and first letter of <paramref name="lName"/>)
+						</description>
+					</item>
+					<item>
+						<term>YY</term>
+						<description>Date 2 digit year</description>
+					</item>
+					<item>
+						<term>MM</term>
+						<description>Date 2 digit month</description>
+					</item>
+					<item>
+						<term>DD</term>
+						<description>Date 2 digit day</description>
+					</item>
+					<item>
+						<term>SS</term>
+						<description>Sequence No. (01 - 99)</description>
+					</item>
+				</list>
+			</returns>
+			<exception cref="ArgumentNullException">
+				Throw when <paramref name="fName"/> is null
+			</exception>
+			<exception cref="ArgumentNullException">
+				Throw when <paramref name="lName"/> is null
+			</exception>
+			<exception cref="InvalidOperationException">
+				Throw when <paramref name="hireDate"/> is in the past
+			</exception>
+		</GenerateId>
+		<GenerateRandomPassword>
+			<summary>
+				Generates a random password of the specified <paramref name="length"/>.
+			</summary>
+			<param name="length">
+				Integer length of the password.
+			</param>
+			<returns>
+				A random password of the specified <paramref name="length"/>.
+			</returns>
+		</GenerateRandomPassword>
+		<LastIdSequence>
+			<value>
+				Value of the last ID sequence.
+			</value>
+		</LastIdSequence>
+	</members>
+</docs>
